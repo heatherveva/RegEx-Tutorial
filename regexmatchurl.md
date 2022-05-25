@@ -1,14 +1,14 @@
 # Matching a URL with Regex
 
-Regular expressions, commonly referred to as regex, are highly functional code snippets that allow developers to validate user input information. Take, for instance, a properly formatted URL, phone number, IP address, or email address, while they all share common characteristics and follow patterns, they remain unique among users.
+Regular expressions, commonly referred to as regex, are highly functional code snippets which allow developers to validate user input information or run searches for character patterns. Take, for instance, a properly formatted URL, phone number, IP address, or email address, while they all share common characteristics and follow patterns, they remain unique among users.
 
-If you're unfamilar with regular expressions they may appear cryptic, even nonsensical, but with a little investigation regular expressions prove to be dynamic code snippets with consistent patterns.
+If you're unfamiliar with regular expressions they may appear cryptic, even nonsensical, but with a little investigation regular expressions prove to be dynamic bits of code used to automate the process of matching character combinations in strings.
 
-The following tutorial will break down the regex used to match a URL. Through this break down, we will demystify the regular expression by disecting each component of the expression in detail.
+The following tutorial will break down the regex used to match a URL. Through this breakdown, we will demystify the regular expression by dissecting each of the expression’s components in detail.
 
 ## Summary
 
-In this scenario, a developer is looking to validate a user input for a URL or web address. By determining the unique patterns contained within any URL, a developer can format and use and regex to ensure the user has correctly entered a URL. The regex to match a URL in Javascript appears below.
+In this scenario, a developer is looking to validate a user input for a URL or web address. By determining the unique patterns contained within a typical URL, a developer can format and use a regular expression to ensure the user has correctly entered a URL and that that URL matches the expected criteria. The regex to match a URL in Javascript appears below.
 
 Matching a URL: `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`
 
@@ -27,17 +27,17 @@ Matching a URL: `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$
 
 ### Anchors
 
-The ^ and $ symbols are both anchors. These two characters mark the beginning and the end of a string value within a regular expression. In other words, anything inside of the ^ and $ notations is a string of characters to be validated, extracted, or replaced within a data set or program.
+The ^ and $ symbols are both anchors. These two characters mark the beginning and the end of a string value within a regular expression. In other words, anything inside of the caret and dollar sign notations are a string of characters to be validated, extracted, or searched against.
 
-It is important to note that the string within these anchor tags can be in one of two formats. The first format would be an exact match string. In our example, we see the series of characters "https", this is considered an exact match. When the regex expression is put to use, it will only find strings containing the exact match to "https" in that position within the expression.
+It is important to note that the string within these anchor tags can be in one of two formats. The first format would be an exact match string. In our example, we see the series of characters "https", this is considered an exact match. When the regex expression is put to use, it will only find strings containing the exact match to "https" in the specified position within the expression.
 
-The second way the information between the anchor tags can be formatted is with ranges of characters. In our URL example, you'll notice character sets like "a-z". Instead of an exact match, this value designates a range of possible characters that could be contained within a URL in that position in the expression.
+The second way the information between the anchor tags can be formatted is with ranges of characters. In our example, you'll notice character sets like "a-z". Instead of an exact match, this value designates a range of possible characters that could be contained within a URL in that position in the string.
 
 It is also important to note here, regular expressions are case sensitive. In our match a URL regex, we notice only lower case letters noted throughout, this means our expression will only return URLs containing all lowercase letters.
 
 ### Quantifiers
 
-Quantifiers set the min and max number of characters and patterns of a substring or section of a larger string. Quantifiers are designated by curly brackets, asterisks, plus signs, or question marks.
+Quantifiers set the minimum and maximum number of characters and patterns of a substring. Quantifiers are designated by curly brackets, asterisks, plus signs, or question marks.
 
 The curly brackets ({}) can contain two, comma separated numbers. These two numbers note the minimum and maximum number of times the preceding pattern must occur.
 
@@ -95,4 +95,4 @@ You will also notice the periods in our example regex are escaped with a precedi
 
 ## Author
 
-I'm Heather Stevens, a burgeoning full stack developer. To view my recent projects and developer portfolio, feel free to visit my [GitHub profile](https://github.com/heatherveva).
+I'm Heather Stevens, a developer advocate who is excited to educate and assist software engineers on the usability and versatility of new technologies. I have a passion for continuous learning and of the power of trial and error.
