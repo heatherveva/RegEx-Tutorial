@@ -1,12 +1,14 @@
 # Matching a URL with Regex
 
-Regex or regular expressions are highly functional code snippets which allow developers to validate, extract, and replace specific patterns within a large body of text. For example, usernames, phone numbers, email addresses, and URLs all share common characteristics and follow patterns, while remaining unique from person to person. At first glance, regular expressions can look cryptic, even nonsensical. However, with a little investigation, regular expressions can be easily decoded.
+Regular expressions, commonly referred to as regex, are highly functional code snippets that allow developers to validate user input information. Take, for instance, a properly formatted URL, phone number, IP address, or email address, while they all share common characteristics and follow patterns, they remain unique among users.
 
-The following tutorial will break down the regex used to match a URL. Through this break down, we will demystify the regular expression by disecting each component of the expression.
+If you're unfamilar with regular expressions they may appear cryptic, even nonsensical, but with a little investigation regular expressions prove to be dynamic code snippets with consistent patterns.
+
+The following tutorial will break down the regex used to match a URL. Through this break down, we will demystify the regular expression by disecting each component of the expression in detail.
 
 ## Summary
 
-If a programmer would like to search through and find all URLs within a data set or program, they can use the regex to match a URL.
+In this scenario, a developer is looking to validate a user input for a URL or web address. By determining the unique patterns contained within any URL, a developer can format and use and regex to ensure the user has correctly entered a URL. The regex to match a URL in Javascript appears below.
 
 Matching a URL: `/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/`
 
